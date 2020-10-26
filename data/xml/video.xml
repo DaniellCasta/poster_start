@@ -1,0 +1,63 @@
+<video>
+  <films>
+    <film id="1" name="Terminator">
+      <genre>Drama</genre>
+      <director>James Cameron</director>
+      <duration>2h</duration>
+      <stars>
+          <star character="Terminator">Arnold Schwarzenegger</star>
+          <star character="Constantin">Linda Hamilton</star>
+          <star character="Lorca">Michael Biehn</star>
+      </stars>
+      <cover>terminator.jpg</cover>
+			<price>50€</price>
+    </film>
+    <film id="2" name="Alien">
+      <genre>Sci-Fi</genre>
+      <director>Ridley Scott</director>
+      <duration>2h 30min</duration>
+      <stars>
+          <star character="Ellen Ripley">Sigourney Weaver</star>
+          <star character="Lambert">Veronica Cartwright</star>
+          <star character="Parker">Yaphet Kotto </star>
+      </stars>
+      <cover>alien.jpg</cover>
+    </film>
+    <film id="3" name="Matrix">
+      <genre>Action</genre>
+      <director>James Cameron</director>
+      <duration>2h 16min</duration>
+      <stars>
+          <star character="Neo">Keanu Reeves</star>
+          <star character="Morpheus">Laurence Fishburne</star>
+          <star character="Trinity">Carrie-Anne Moss</star>
+      </stars>
+      <cover>matrix.jpg</cover>
+    </film>
+  </films>
+  <series>
+    <serie id="1" name="Escobar, el patrón del mal">
+      <episodes>74</episodes>
+      <genre> Telenovela</genre>
+      <director>Carlos Moreno</director>
+      <stars>
+          <star character="Sito Miñanco">Javier Rey</star>
+          <star character="Darío Castro">Tristán Ulloa</star>
+          <star character="Manuel Charlín">Antonio Durán</star>
+      </stars>
+      <cover>farinya.jpg</cover>
+    </serie>
+    <serie id="2" name="Chernobyl">
+      <episodes>5</episodes>
+      <genre>Drama</genre>
+      <director>Craig Mazin</director>
+      <stars>
+          <star character="Jessie">Jessie Buckley</star>
+          <star character="Constantin">Jared Harris</star>
+          <star character="Lorca">Stellan Skarsgard</star>
+      </stars>
+      <cover>chernobyl.jpg</cover>
+    </serie>
+
+  </series>
+</video>
