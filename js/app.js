@@ -5,21 +5,20 @@ import PosterAPI from "./PosterAPI.js";
 function init() {
   //Initial loading of date
   PosterAPI.getJSONPoster();
-  //PosterAPI.printStars();
+  //PosterAPI.buttonFav();
+  PosterAPI.sumary();
 
-  //Search boton starts
-  const btnSearch = document.querySelector("#btn-search");
-  btnSearch.addEventListener("click", function (e) {
-    e.preventDefault();
-    PosterAPI.searchPosterFilms();
-    PosterAPI.searchFilm();
-  });
 
   //Order botom action
-  const btnOrder = document.querySelector("#btn-order");
+  /*const btnOrder = document.querySelector("#c");
   btnOrder.addEventListener("click", function (e) {
     saveOrderInStorage();
-  });
+  });*/
+  /*$(document).ready(function(){
+    $('#btn-order').on('click', function(){
+      console.log("ola perola");
+    });
+  });*/
 }
 
 

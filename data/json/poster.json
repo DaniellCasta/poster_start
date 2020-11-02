@@ -1,5 +1,5 @@
-{
-  "poster": {
+[
+  {
     "films": [
       {
         "id": 1,
@@ -25,7 +25,7 @@
         "cover": "alien.jpg",
         "price": "50€",
         "sinopsis": "De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación. (FILMAFFINITY)",
-        "istars": [
+        "stars": [
           { "character": "Ellen Ripley", "name": "Sigourney Weaver" },
           { "character": "Lambert", "name": "Veronica Cartwright" },
           { "character": "Parker", "name": "Yaphet Kotto" }
@@ -45,7 +45,8 @@
           { "character": "Morpheus", "name": "Laurence Fishburne" },
           { "character": "Trinity", "name": "Carrie-Anne Moss" }
         ]
-      },      {
+      },
+      {
         "id": 1,
         "name": "Terminator",
         "genre": "Action",
@@ -90,7 +91,9 @@
           { "character": "Trinity", "name": "Carrie-Anne Moss" }
         ]
       }
-    ],
+    ]
+  },
+  {
     "series": [
       {
         "id": 1,
@@ -136,10 +139,7 @@
         "sinopsis": "Sito Miñanco, un pescador con destreza manejando la lancha, se inicia en el contrabando de tabaco de la mano de Terito (Vicente Otero Pérez), el jefe de los clanes de la ría de Arousa. Después se establece por su cuenta con otros dos amigos. ",
         "stars": [
           { "character": "Sargento Darío Castro", "name": "Tristán Ulloa" },
-          {
-            "character": "Pilar Charlín",
-            "name": "Isabel Naveira Ferreiro"
-          },
+          { "character": "Pilar Charlín", "name": "Isabel Naveira Ferreiro" },
           { "character": "Manuel Charlín", "name": "Antonio Durán" }
         ]
       },
@@ -187,13 +187,10 @@
         "sinopsis": "Sito Miñanco, un pescador con destreza manejando la lancha, se inicia en el contrabando de tabaco de la mano de Terito (Vicente Otero Pérez), el jefe de los clanes de la ría de Arousa. Después se establece por su cuenta con otros dos amigos. ",
         "stars": [
           { "character": "Sargento Darío Castro", "name": "Tristán Ulloa" },
-          {
-            "character": "Pilar Charlín",
-            "name": "Isabel Naveira Ferreiro"
-          },
+          { "character": "Pilar Charlín", "name": "Isabel Naveira Ferreiro" },
           { "character": "Manuel Charlín", "name": "Antonio Durán" }
         ]
       }
     ]
   }
-}
+]

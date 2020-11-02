@@ -36,6 +36,7 @@ class PosterAPI {
 
   static getJSONFilmStars(stars) {
     let html = "";
+    console.log(stars)
     stars.forEach((oStar) => {
       html += `
               <div style="margin: 15px;">
@@ -54,7 +55,7 @@ class PosterAPI {
       .then((result) => result.json())
       .then((data) => {
         let listFilmStars = data[0].films[0].stars;
-        let listSerieStars = data[1].series[0].stars;
+        let listSerieStars = data[0].films[0].stars;
         let listFilms = data[0].films;
         let listSeries = data[1].series;
         PosterAPI.getJSONFilmStars(listFilmStars);
@@ -110,7 +111,7 @@ class PosterAPI {
                     ${PosterAPI.getJSONFilmStars(oFilm.stars)}
                     </ul>
                     <!--Us del tooltip i modal -->
-                    <button id="btn-buy-${oFilm.id}"  type="button" class="btn btn-primary" data-memory="${oFilm.name}" data-toggle="modal" data-target="#pedido" title="Pago sólo con paypal">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pedido" title="Pago sólo con paypal">
                     Comprar
                     </button>
         `;
@@ -164,33 +165,30 @@ class PosterAPI {
                     ${PosterAPI.getJSONSerieStars(oSerie.stars)}
                     </ul>
                     <!--Us del tooltip i modal -->
-                    <button type="button" class="btn btn-primary" data-memory="${oSerie.name}" data-toggle="modal" data-target="#pedido" title="Pago sólo con paypal">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pedido" title="Pago sólo con paypal">
                     Comprar
                     </button>
         `;
       document.querySelector("#list-series").innerHTML += card;
     });
   }
-
-  static handleClickEvent() {
-    let favouriteList = document.querySelectorAll(".btn-primary");
-    favouriteList.forEach((button) => {
-      button.addEventListener("click", function (e) {
-        let memory = this.getAttribute("data-memory");
-        localStorage.setItem("post", memory);
-      });
-    });
+  /*
+  static saveServer(server) {
+    server = "";
   }
 
-  static buttonOrder() {
+  static buttonFav() {
     let save_button = {};
-    document.querySelector("#btn-buy").innerHTML = save_button;
-    document.getElementById("btn-buy");
+    document.querySelector("#btn-order").innerHTML = save_button;
     save_button.onclick = saveData();
 
-    function saveData() {}
-  }
-
+    function saveData() {
+      let input = PosterAPI.saveServer;
+      localStorage.setItem("server", input.value);
+      let storedValue = localStorage.getItem("server");
+      console.log(storedValue);
+    }
+  }*/
 }
 
 export default PosterAPI;
