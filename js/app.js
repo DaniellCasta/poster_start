@@ -6,7 +6,6 @@ function init() {
   //Initial loading of date
   PosterAPI.getJSONPoster();
   //PosterAPI.buttonFav();
-  PosterAPI.sumary();
 
 
   //Order botom action

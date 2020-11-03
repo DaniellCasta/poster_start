@@ -1,196 +1,256 @@
-[
-  {
-    "films": [
-      {
-        "id": 1,
-        "name": "Terminator",
-        "genre": "Action",
-        "director": "James Cameron",
-        "duration": "2h",
-        "cover": "terminator.jpg",
-        "price": "50€",
-        "sinopsis": "Los Ángeles, año 2029. Las máquinas dominan el mundo. Los rebeldes que luchan contra ellas tienen como líder a John Connor, un hombre que nació en los años ochenta. Para acabar con la rebelión, las máquinas deciden enviar al pasado a un robot -Terminator- cuya misión será eliminar a Sarah Connor, la madre de John, e impedir así su nacimiento. (FILMAFFINITY)",
-        "stars": [
-          { "character": "Terminator", "name": "Arnaold Schwarzenegger" },
-          { "character": "Constantin", "name": "Linda Hamilton" },
-          { "character": "Lorca", "name": "Michael Biehn" }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Alien",
-        "genre": "Sci-Fi",
-        "director": "Ridley Scott",
-        "duration": "2h",
-        "cover": "alien.jpg",
-        "price": "50€",
-        "sinopsis": "De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación. (FILMAFFINITY)",
-        "stars": [
-          { "character": "Ellen Ripley", "name": "Sigourney Weaver" },
-          { "character": "Lambert", "name": "Veronica Cartwright" },
-          { "character": "Parker", "name": "Yaphet Kotto" }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "Matrix",
-        "genre": "Action",
-        "director": "James Cameron",
-        "duration": "2h",
-        "cover": "matrix.jpg",
-        "price": "50€",
-        "sinopsis": "De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación. (FILMAFFINITY)",
-        "stars": [
-          { "character": "Neo", "name": "Keanu Reeves" },
-          { "character": "Morpheus", "name": "Laurence Fishburne" },
-          { "character": "Trinity", "name": "Carrie-Anne Moss" }
-        ]
-      },
-      {
-        "id": 1,
-        "name": "Terminator",
-        "genre": "Action",
-        "director": "James Cameron",
-        "duration": "2h",
-        "cover": "terminator.jpg",
-        "price": "50€",
-        "sinopsis": "Los Ángeles, año 2029. Las máquinas dominan el mundo. Los rebeldes que luchan contra ellas tienen como líder a John Connor, un hombre que nació en los años ochenta. Para acabar con la rebelión, las máquinas deciden enviar al pasado a un robot -Terminator- cuya misión será eliminar a Sarah Connor, la madre de John, e impedir así su nacimiento. (FILMAFFINITY)",
-        "stars": [
-          { "character": "Terminator", "name": "Arnaold Schwarzenegger" },
-          { "character": "Constantin", "name": "Linda Hamilton" },
-          { "character": "Lorca", "name": "Michael Biehn" }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Alien",
-        "genre": "Sci-Fi",
-        "director": "Ridley Scott",
-        "duration": "2h",
-        "cover": "alien.jpg",
-        "price": "50€",
-        "sinopsis": "De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación. (FILMAFFINITY)",
-        "istars": [
-          { "character": "Ellen Ripley", "name": "Sigourney Weaver" },
-          { "character": "Lambert", "name": "Veronica Cartwright" },
-          { "character": "Parker", "name": "Yaphet Kotto" }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "Matrix",
-        "genre": "Action",
-        "director": "James Cameron",
-        "duration": "2h",
-        "cover": "matrix.jpg",
-        "price": "50€",
-        "sinopsis": "De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación. (FILMAFFINITY)",
-        "stars": [
-          { "character": "Neo", "name": "Keanu Reeves" },
-          { "character": "Morpheus", "name": "Laurence Fishburne" },
-          { "character": "Trinity", "name": "Carrie-Anne Moss" }
-        ]
-      }
-    ]
-  },
-  {
-    "series": [
-      {
-        "id": 1,
-        "name": "Escobar, el patrón del mal",
-        "genre": "Telenovela",
-        "director": "Carlos Moreno",
-        "episodes": "74",
-        "duration": "1h aprox",
-        "cover": "pabloescobar.jpg",
-        "price": "50€",
-        "sinopsis": "Basada en documentos periodísticos y de testimonios de personas cercanas, esta serie retrata la vida de Pablo Escobar.6",
-        "stars": [
-          { "character": "Pablo Escobar", "name": "Andrés Parra Medina" },
-          { "character": "Paty de Escobar", "name": "Cecilia Navia" },
-          { "character": "Gonzalo Gaviria", "name": "Christian Tappan" }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Chernóbil",
-        "genre": "Drama",
-        "director": "Johan Renck",
-        "episodes": "5",
-        "duration": "60-70 min",
-        "cover": "chernobyl.jpg",
-        "price": "50€",
-        "sinopsis": "Chernobyl dramatiza la historia del desastre de la planta nuclear de Chernóbil de abril de 1986 que ocurrió en la República Socialista Soviética de Ucrania",
-        "stars": [
-          { "character": "Valery Legasov", "name": "Jared Harris" },
-          { "character": "Boris Shcherbina", "name": "Stellan Skarsgard" },
-          { "character": "Lyudmilla Ignatenko", "name": "Jessie Buckley" }
-        ]
-      },
-      {
-        "id": 1,
-        "name": "Fariña",
-        "genre": "Thriller",
-        "director": "Carlos Sedes y Jorge Torregrossa",
-        "episodes": "10",
-        "duration": "65-70 min",
-        "cover": "farinya.jpg",
-        "price": "50€",
-        "sinopsis": "Sito Miñanco, un pescador con destreza manejando la lancha, se inicia en el contrabando de tabaco de la mano de Terito (Vicente Otero Pérez), el jefe de los clanes de la ría de Arousa. Después se establece por su cuenta con otros dos amigos. ",
-        "stars": [
-          { "character": "Sargento Darío Castro", "name": "Tristán Ulloa" },
-          { "character": "Pilar Charlín", "name": "Isabel Naveira Ferreiro" },
-          { "character": "Manuel Charlín", "name": "Antonio Durán" }
-        ]
-      },
-      {
-        "id": 1,
-        "name": "Escobar, el patrón del mal",
-        "genre": "Telenovela",
-        "director": "Carlos Moreno",
-        "episodes": "74",
-        "duration": "1h aprox",
-        "cover": "pabloescobar.jpg",
-        "price": "50€",
-        "sinopsis": "Basada en documentos periodísticos y de testimonios de personas cercanas, esta serie retrata la vida de Pablo Escobar.6",
-        "stars": [
-          { "character": "Pablo Escobar", "name": "Andrés Parra Medina" },
-          { "character": "Paty de Escobar", "name": "Cecilia Navia" },
-          { "character": "Gonzalo Gaviria", "name": "Christian Tappan" }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Chernóbil",
-        "genre": "Drama",
-        "director": "Johan Renck",
-        "episodes": "5",
-        "duration": "60-70 min",
-        "cover": "chernobyl.jpg",
-        "price": "50€",
-        "sinopsis": "Chernobyl dramatiza la historia del desastre de la planta nuclear de Chernóbil de abril de 1986 que ocurrió en la República Socialista Soviética de Ucrania",
-        "stars": [
-          { "character": "Valery Legasov", "name": "Jared Harris" },
-          { "character": "Boris Shcherbina", "name": "Stellan Skarsgard" },
-          { "character": "Lyudmilla Ignatenko", "name": "Jessie Buckley" }
-        ]
-      },
-      {
-        "id": 1,
-        "name": "Fariña",
-        "genre": "Thriller",
-        "director": "Carlos Sedes y Jorge Torregrossa",
-        "episodes": "10",
-        "duration": "65-70 min",
-        "cover": "farinya.jpg",
-        "price": "50€",
-        "sinopsis": "Sito Miñanco, un pescador con destreza manejando la lancha, se inicia en el contrabando de tabaco de la mano de Terito (Vicente Otero Pérez), el jefe de los clanes de la ría de Arousa. Después se establece por su cuenta con otros dos amigos. ",
-        "stars": [
-          { "character": "Sargento Darío Castro", "name": "Tristán Ulloa" },
-          { "character": "Pilar Charlín", "name": "Isabel Naveira Ferreiro" },
-          { "character": "Manuel Charlín", "name": "Antonio Durán" }
-        ]
-      }
-    ]
-  }
-]
+{
+  "films": [
+    {
+      "id": 1,
+      "name": "Terminator",
+      "genre": "Action",
+      "director": "James Cameron",
+      "duration": "2h",
+      "cover": "terminator.jpg",
+      "price": "50€",
+      "sinopsis": "Los Ángeles, año 2029. Las máquinas dominan el mundo. Los rebeldes que luchan contra ellas tienen como líder a John Connor, un hombre que nació en los años ochenta. Para acabar con la rebelión, las máquinas deciden enviar al pasado a un robot -Terminator- cuya misión será eliminar a Sarah Connor, la madre de John, e impedir así su nacimiento. (FILMAFFINITY)",
+      "stars": [
+        { "character": "Terminator", "name": "Arnaold Schwarzenegger" },
+        { "character": "Constantin", "name": "Linda Hamilton" },
+        { "character": "Lorca", "name": "Michael Biehn" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Alien",
+      "genre": "Sci-Fi",
+      "director": "Ridley Scott",
+      "duration": "2h",
+      "cover": "alien.jpg",
+      "price": "50€",
+      "sinopsis": "De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación. (FILMAFFINITY)",
+      "stars": [
+        { "character": "Ellen Ripley", "name": "Sigourney Weaver" },
+        { "character": "Lambert", "name": "Veronica Cartwright" },
+        { "character": "Parker", "name": "Yaphet Kotto" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Matrix",
+      "genre": "Action",
+      "director": "James Cameron",
+      "duration": "2h",
+      "cover": "matrix.jpg",
+      "price": "50€",
+      "sinopsis": "De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación. (FILMAFFINITY)",
+      "stars": [
+        { "character": "Neo", "name": "Keanu Reeves" },
+        { "character": "Morpheus", "name": "Laurence Fishburne" },
+        { "character": "Trinity", "name": "Carrie-Anne Moss" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Terminator",
+      "genre": "Action",
+      "director": "James Cameron",
+      "duration": "2h",
+      "cover": "terminator.jpg",
+      "price": "50€",
+      "sinopsis": "Los Ángeles, año 2029. Las máquinas dominan el mundo. Los rebeldes que luchan contra ellas tienen como líder a John Connor, un hombre que nació en los años ochenta. Para acabar con la rebelión, las máquinas deciden enviar al pasado a un robot -Terminator- cuya misión será eliminar a Sarah Connor, la madre de John, e impedir así su nacimiento. (FILMAFFINITY)",
+      "stars": [
+        { "character": "Terminator", "name": "Arnaold Schwarzenegger" },
+        { "character": "Constantin", "name": "Linda Hamilton" },
+        { "character": "Lorca", "name": "Michael Biehn" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Alien",
+      "genre": "Sci-Fi",
+      "director": "Ridley Scott",
+      "duration": "2h",
+      "cover": "alien.jpg",
+      "price": "50€",
+      "sinopsis": "De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación. (FILMAFFINITY)",
+      "stars": [
+        { "character": "Ellen Ripley", "name": "Sigourney Weaver" },
+        { "character": "Lambert", "name": "Veronica Cartwright" },
+        { "character": "Parker", "name": "Yaphet Kotto" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Matrix",
+      "genre": "Action",
+      "director": "James Cameron",
+      "duration": "2h",
+      "cover": "matrix.jpg",
+      "price": "50€",
+      "sinopsis": "De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación. (FILMAFFINITY)",
+      "stars": [
+        { "character": "Neo", "name": "Keanu Reeves" },
+        { "character": "Morpheus", "name": "Laurence Fishburne" },
+        { "character": "Trinity", "name": "Carrie-Anne Moss" }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Matrix",
+      "genre": "Action",
+      "director": "James Cameron",
+      "duration": "2h",
+      "cover": "matrix.jpg",
+      "price": "50€",
+      "sinopsis": "De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación. (FILMAFFINITY)",
+      "stars": [
+        { "character": "Neo", "name": "Keanu Reeves" },
+        { "character": "Morpheus", "name": "Laurence Fishburne" },
+        { "character": "Trinity", "name": "Carrie-Anne Moss" }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Matrix",
+      "genre": "Action",
+      "director": "James Cameron",
+      "duration": "2h",
+      "cover": "matrix.jpg",
+      "price": "50€",
+      "sinopsis": "De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación. (FILMAFFINITY)",
+      "stars": [
+        { "character": "Neo", "name": "Keanu Reeves" },
+        { "character": "Morpheus", "name": "Laurence Fishburne" },
+        { "character": "Trinity", "name": "Carrie-Anne Moss" }
+      ]
+    }
+  ],
+
+
+  "series": [
+    {
+      "id": 1,
+      "name": "Escobar, el patrón del mal",
+      "genre": "Telenovela",
+      "director": "Carlos Moreno",
+      "episodes": "74",
+      "duration": "1h aprox",
+      "cover": "pabloescobar.jpg",
+      "price": "50€",
+      "sinopsis": "Basada en documentos periodísticos y de testimonios de personas cercanas, esta serie retrata la vida de Pablo Escobar.6",
+      "stars": [
+        { "character": "Pablo Escobar", "name": "Andrés Parra Medina" },
+        { "character": "Paty de Escobar", "name": "Cecilia Navia" },
+        { "character": "Gonzalo Gaviria", "name": "Christian Tappan" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Chernóbil",
+      "genre": "Drama",
+      "director": "Johan Renck",
+      "episodes": "5",
+      "duration": "60-70 min",
+      "cover": "chernobyl.jpg",
+      "price": "50€",
+      "sinopsis": "Chernobyl dramatiza la historia del desastre de la planta nuclear de Chernóbil de abril de 1986 que ocurrió en la República Socialista Soviética de Ucrania",
+      "stars": [
+        { "character": "Valery Legasov", "name": "Jared Harris" },
+        { "character": "Boris Shcherbina", "name": "Stellan Skarsgard" },
+        { "character": "Lyudmilla Ignatenko", "name": "Jessie Buckley" }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Fariña",
+      "genre": "Thriller",
+      "director": "Carlos Sedes y Jorge Torregrossa",
+      "episodes": "10",
+      "duration": "65-70 min",
+      "cover": "farinya.jpg",
+      "price": "50€",
+      "sinopsis": "Sito Miñanco, un pescador con destreza manejando la lancha, se inicia en el contrabando de tabaco de la mano de Terito (Vicente Otero Pérez), el jefe de los clanes de la ría de Arousa. Después se establece por su cuenta con otros dos amigos. ",
+      "stars": [
+        { "character": "Sargento Darío Castro", "name": "Tristán Ulloa" },
+        { "character": "Pilar Charlín", "name": "Isabel Naveira Ferreiro" },
+        { "character": "Manuel Charlín", "name": "Antonio Durán" }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Escobar, el patrón del mal",
+      "genre": "Telenovela",
+      "director": "Carlos Moreno",
+      "episodes": "74",
+      "duration": "1h aprox",
+      "cover": "pabloescobar.jpg",
+      "price": "50€",
+      "sinopsis": "Basada en documentos periodísticos y de testimonios de personas cercanas, esta serie retrata la vida de Pablo Escobar.6",
+      "stars": [
+        { "character": "Pablo Escobar", "name": "Andrés Parra Medina" },
+        { "character": "Paty de Escobar", "name": "Cecilia Navia" },
+        { "character": "Gonzalo Gaviria", "name": "Christian Tappan" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Chernóbil",
+      "genre": "Drama",
+      "director": "Johan Renck",
+      "episodes": "5",
+      "duration": "60-70 min",
+      "cover": "chernobyl.jpg",
+      "price": "50€",
+      "sinopsis": "Chernobyl dramatiza la historia del desastre de la planta nuclear de Chernóbil de abril de 1986 que ocurrió en la República Socialista Soviética de Ucrania",
+      "stars": [
+        { "character": "Valery Legasov", "name": "Jared Harris" },
+        { "character": "Boris Shcherbina", "name": "Stellan Skarsgard" },
+        { "character": "Lyudmilla Ignatenko", "name": "Jessie Buckley" }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Fariña",
+      "genre": "Thriller",
+      "director": "Carlos Sedes y Jorge Torregrossa",
+      "episodes": "10",
+      "duration": "65-70 min",
+      "cover": "farinya.jpg",
+      "price": "50€",
+      "sinopsis": "Sito Miñanco, un pescador con destreza manejando la lancha, se inicia en el contrabando de tabaco de la mano de Terito (Vicente Otero Pérez), el jefe de los clanes de la ría de Arousa. Después se establece por su cuenta con otros dos amigos. ",
+      "stars": [
+        { "character": "Sargento Darío Castro", "name": "Tristán Ulloa" },
+        { "character": "Pilar Charlín", "name": "Isabel Naveira Ferreiro" },
+        { "character": "Manuel Charlín", "name": "Antonio Durán" }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Fariña",
+      "genre": "Thriller",
+      "director": "Carlos Sedes y Jorge Torregrossa",
+      "episodes": "10",
+      "duration": "65-70 min",
+      "cover": "farinya.jpg",
+      "price": "50€",
+      "sinopsis": "Sito Miñanco, un pescador con destreza manejando la lancha, se inicia en el contrabando de tabaco de la mano de Terito (Vicente Otero Pérez), el jefe de los clanes de la ría de Arousa. Después se establece por su cuenta con otros dos amigos. ",
+      "stars": [
+        { "character": "Sargento Darío Castro", "name": "Tristán Ulloa" },
+        { "character": "Pilar Charlín", "name": "Isabel Naveira Ferreiro" },
+        { "character": "Manuel Charlín", "name": "Antonio Durán" }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Escobar, el patrón del mal",
+      "genre": "Telenovela",
+      "director": "Carlos Moreno",
+      "episodes": "74",
+      "duration": "1h aprox",
+      "cover": "pabloescobar.jpg",
+      "price": "50€",
+      "sinopsis": "Basada en documentos periodísticos y de testimonios de personas cercanas, esta serie retrata la vida de Pablo Escobar.6",
+      "stars": [
+        { "character": "Pablo Escobar", "name": "Andrés Parra Medina" },
+        { "character": "Paty de Escobar", "name": "Cecilia Navia" },
+        { "character": "Gonzalo Gaviria", "name": "Christian Tappan" }
+      ]
+    }
+  ]
+}

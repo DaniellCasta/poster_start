@@ -4,7 +4,7 @@ body{
 
 .grid-videos {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
   padding: 20px;
 }
