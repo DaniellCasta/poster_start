@@ -13,12 +13,7 @@ class PosterAPI {
     let html = "";
     stars.forEach((oStar) => {
       html += `
-              <div style="margin: 5px;">
-                <div style="color: rgb(0, 255, 255)">
-                 Actores :&nbsp
-                </div>
-                <div class="row" style="margin: 15px;">${oStar.name}&nbsp<p style="color: rgb(204, 0, 0)">como</p>&nbsp${oStar.character}</div>
-              </div>
+              <li class="list-group-item">${oStar.name} (${oStar.character})</li>
             `;
     });
     return html;
@@ -40,57 +35,26 @@ class PosterAPI {
     films.forEach((oFilm) => {
       let card = `
 		  <!--Card-->
-                  <div class="card mb-4 shadow-sm" data-memory"${
-                    oFilm.id
-                  }"  style="width: 14rem;">
-                    <img src="img/${
-                      oFilm.cover
-                    }" class="card-img-top" alt="...">
-                    <div class="card-body" >
-                      <h5 class="card-title">${oFilm.name}</h5>
-                      <div class="card-text row" style="margin: 5px">
-                        <div style="color: rgb(0, 255, 255)">
-                          Sinopsis :&nbsp
-                        </div>
-                        ${PosterAPI.sumary(oFilm.sinopsis)}
-                      </div>
-                      <div class="card-text row" style="margin: 5px">
-                        <div style="color: rgb(0, 255, 255)">
-                          Director :&nbsp
-                        </div>
-                        ${oFilm.director}
-                      </div>
-                      <div class="card-text row" style="margin: 5px">
-                        <div style="color: rgb(0, 255, 255)">
-                          Duración :&nbsp
-                        </div>
-                        ${oFilm.duration}
-                      </div>
-                      <div class="card-text row" style="margin: 5px">
-                        <div style="color: rgb(0, 255, 255)">
-                          Director :&nbsp
-                        </div>
-                        ${oFilm.price}
-                      </div>
-                      <div class="card-text row" style="margin: 5px">
-                        <div style="color: rgb(0, 255, 255)">
-                          Género :&nbsp
-                        </div>
-                        ${oFilm.genre}
-                      </div>
-                    <ul class="list-group list-group-flush star">
-                      ${PosterAPI.getJSONStars(oFilm.stars)}
-                    </ul>
-  
-                    </div>
-                    <!--Us del tooltip i modal -->
-                    <button id="btn-buy-${
-                      oFilm.id
-                    }"  type="button" class="btn btn-primary" data-memory="${
-        oFilm.name
-      }" data-toggle="modal" data-target="#pedido" title="Pago sólo con paypal">
-                    Comprar
-                    </button>
+        <div id="film-${oFilm.id}" class="card mb-4 shadow-sm" style="width: 14rem;">
+         <img src="./img/${oFilm.cover}" class="card-img-top" alt="poster img.">
+          <div class="card-body">
+            <h5 class="card-title">${oFilm.name}</h5>
+            <p class="card-text">${PosterAPI.sumary(oFilm.sinopsis)}</p>
+            <p class="card-text"><span class="text-info">Duración:</span>${oFilm.duration}</p>
+            <p class="card-text"><span class="text-info">Director:</span>${oFilm.director}</p>
+            <p class="card-text"><span class="text-info bold">Género:</span>${oFilm.genre}</p>
+            <p class="card-text price">${oFilm.price}</p>
+          </div>
+          <div class="card-header">Stars</div>
+          <ul class="list-group list-group-flush">
+          ${PosterAPI.getJSONStars(oFilm.stars)}
+          </ul>
+          <div class="text-center" data-toggle="modal" data-target="#pedido">
+            <button data-idOrder="${oFilm.id}" type="button" class="btn btn-primary btn-buy" data-toggle="tooltip" data-placement="top" title="Pago sólo con paypal">
+              Comprar
+            </button>
+          </div>
+        </div>
         `;
       document.querySelector("#list-films").innerHTML += card;
     });
@@ -101,79 +65,79 @@ class PosterAPI {
     series.forEach((oSerie) => {
       let card = `
 		  <!--Card-->
-                  <div class="card mb-4 shadow-sm" data-memory"${
-                    oSerie.id
-                  }"  style="width: 14rem;">
-                    <img src="img/${
-                      oSerie.cover
-                    }" class="card-img-top" alt="...">
-                    <div class="card-body" >
-                      <h5 class="card-title">${oSerie.name}</h5>
-                      <div class="card-text row" style="margin: 5px">
-                        <div style="color: rgb(0, 255, 255)">
-                          Sinopsis :&nbsp
-                        </div>
-                        ${PosterAPI.sumary(oSerie.sinopsis)}
-                      </div>
-                      <div class="card-text row" style="margin: 5px">
-                        <div style="color: rgb(0, 255, 255)">
-                          Director :&nbsp
-                        </div>
-                        ${oSerie.director}
-                      </div>
-                      <div class="card-text row" style="margin: 5px">
-                        <div style="color: rgb(0, 255, 255)">
-                          Duración :&nbsp
-                        </div>
-                        ${oSerie.duration}
-                      </div>
-                      <div class="card-text row" style="margin: 5px">
-                        <div style="color: rgb(0, 255, 255)">
-                          Director :&nbsp
-                        </div>
-                        ${oSerie.price}
-                      </div>
-                      <div class="card-text row" style="margin: 5px">
-                        <div style="color: rgb(0, 255, 255)">
-                          Género :&nbsp
-                        </div>
-                        ${oSerie.genre}
-                      </div>
-                    <ul class="list-group list-group-flush star">
-                      ${PosterAPI.getJSONStars(oSerie.stars)}
-                    </ul>
-  
-                    </div>
-                    <!--Us del tooltip i modal -->
-                    <button id="btn-buy-${
-                      oSerie.id
-                    }"  type="button" class="btn btn-primary" data-memory="${
-                      oSerie.name
-      }" data-toggle="modal" data-target="#pedido" title="Pago sólo con paypal">
-                    Comprar
-                    </button>
+        <div id="film-${oSerie.id}" class="card mb-4 shadow-sm" style="width: 14rem;" >
+         <img src="./img/${oSerie.cover}" class="card-img-top" alt="poster img.">
+          <div class="card-body">
+            <h5 class="card-title">${oSerie.name}</h5>
+            <p class="card-text">${PosterAPI.sumary(oSerie.sinopsis)}</p>
+            <p class="card-text"><span class="text-info">Duración:</span>${oSerie.duration}</p>
+            <p class="card-text"><span class="text-info">Director:</span>${oSerie.director}</p>
+            <p class="card-text"><span class="text-info bold">Género:</span>${oSerie.genre}</p>
+            <p class="card-text price">${oSerie.price}</p>
+          </div>
+          <div class="card-header">Stars</div>
+          <ul class="list-group list-group-flush">
+          ${PosterAPI.getJSONStars(oSerie.stars)}
+          </ul>
+          <div class="text-center" data-toggle="modal" data-target="#pedido">
+            <button data-idOrder="${oSerie.id}" type="button" class="btn btn-primary btn-buy" data-toggle="tooltip" data-placement="top" title="Pago sólo con paypal">
+              Comprar
+            </button>
+          </div>
+        </div>
         `;
       document.querySelector("#list-series").innerHTML += card;
     });
   }
 
-  static handleClickEvent() {
-    let favouriteList = document.querySelector(".btn-primary");
-    favouriteList.forEach((button) => {
-      button.addEventListener("click", function (e) {
-        let memory = this.getAttribute("data-memory");
-        localStorage.setItem("post", memory);
+  static searchFilm() {
+		fetch('./data/poster.json')
+			.then(result => result.json())
+			.then(data => {
+				let txtSearch = document.querySelector("#txt-search").value;
+				txtSearch = txtSearch.toLowerCase();
+				let listFilms = data.poster.films;
+				let films = listFilms.filter(
+					// If the condition returns true, return the current item
+					// Check if there is a film width the same name (or more than one) 
+					(item) => (item.name.toLowerCase().indexOf(txtSearch) > -1)
+				);
+				if (films.length > 0) {
+					PosterAPI.populateFilms(films);
+				} else {
+					document.querySelector("#list-films").innerHTML = `
+						<p>Ninguna película coincide con los datos de búsqueda</p>
+					`;
+				}
+
+			});
+	}
+
+  static handleButtonOrder() {
+    //Configure action of every buy button
+    let aBtn = document.querySelectorAll(".btn-buy");
+    if (aBtn) {
+      aBtn.forEach((item) => {
+        item.addEventListener("click", function () {
+
+          //modal fields
+          let tagPostId = document.querySelector("#order_id");
+          let tagPostName = document.querySelector("#order_name");
+          let tagPostPrice = document.querySelector("#order_price");
+
+          let idFilm = item.getAttribute("data-idOrder");
+          tagPostId.value = idFilm;
+
+          let title = item.querySelector("#film-" + idFilm + ".card-title")
+            .innerHTML;
+          tagPostName.innerHTML = title;
+
+          let price = item.querySelector("#film-" + idFilm + ".price")
+            .innerHTML;
+          tagPostPrice.value = price;
+        });
       });
-    });
-  }
-
-  static buttonOrder() {
-    let save_button = {};
-    document.querySelector("#btn-buy").innerHTML = save_button;
-    document.getElementById("btn-buy");
-    save_button.onclick = saveData();
-
-    function saveData() {}
+    }
   }
 }
 
